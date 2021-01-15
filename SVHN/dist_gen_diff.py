@@ -270,6 +270,11 @@ if args.weight_vae == 0:
     print("*****Result of baseline test*****")
 else:
     print("*****Result of VAE+Baseline test*****")
-print("No of images generated = ", len(result_loop_index))
-print("Coverage of generated images:", result_coverage)
-print('Duration: {}'.format(datetime.datetime.now() - start_time))
+
+print("No of test inputs generated: ", no_tests)
+print("Cumulative coverage for tests: ", round(result_coverage[-1],3))
+if no_tests == 0:
+    print('Avg. test generation time: NA s')
+else:
+    print('Avg. test generation time: {} s'.format(round(duration/no_tests),2))
+print('Total time: {} s'.format(round(duration, 2)))
