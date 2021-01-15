@@ -90,13 +90,8 @@ def ModelC(input_tensor=None, train=False):
         # print("--- %s seconds ---" % (time.clock() - start_time))
     else:
         model.load_weights('./ModelC.h5')
-        print('SVHN ModelC loaded')
+
     return model
-
-
-        
-
-    
 
 
 if __name__ == '__main__':
