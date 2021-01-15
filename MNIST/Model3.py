@@ -74,7 +74,6 @@ def Model3(input_tensor=None, train=False):
         print('Overall Test accuracy:', score[1])
     else:
         model.load_weights('./Model3.h5')
-        print('Model3 loaded')
 
     return model
 
