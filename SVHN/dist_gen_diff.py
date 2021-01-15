@@ -272,9 +272,11 @@ else:
     print("*****Result of VAE+Baseline test*****")
 
 print("No of test inputs generated: ", no_tests)
-print("Cumulative coverage for tests: ", round(result_coverage[-1],3))
+
 if no_tests == 0:
+    print("Cumulative coverage for tests: 0")
     print('Avg. test generation time: NA s')
 else:
+    print("Cumulative coverage for tests: ", round(result_coverage[-1],3))
     print('Avg. test generation time: {} s'.format(round(duration/no_tests),2))
 print('Total time: {} s'.format(round(duration, 2)))
