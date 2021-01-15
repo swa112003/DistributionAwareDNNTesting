@@ -137,7 +137,7 @@ def Vae_SVHN(input_tensor=None, train=False):
         vae.save_weights('./vae_svhn.h5')
     else:
         vae.load_weights('./vae_svhn.h5')
-        print('VAE loaded')
+
     return vae
 
     
