@@ -73,7 +73,6 @@ def Model2(input_tensor=None, train=False):
         print('Overall Test accuracy:', score[1])
     else:
         model.load_weights('./Model2.h5')
-        print('Model2 loaded')
 
     return model
 
