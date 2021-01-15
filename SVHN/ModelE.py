@@ -124,11 +124,7 @@ def ModelE(input_tensor=None, train=False):
     else:
         model.load_weights('./ModelE.h5')
         
-        print('SVHN ModelE loaded')
     return model
-
-
-
 
 
 if __name__ == '__main__':
