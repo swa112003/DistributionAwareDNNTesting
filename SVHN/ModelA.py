@@ -89,7 +89,7 @@ def ModelA(input_tensor=None, train=False):
         # print("--- %s seconds ---" % (time.clock() - start_time))
     else:
         model.load_weights('./ModelA.h5')
-        print('SVHN ModelA loaded')
+
     return model
 
 
