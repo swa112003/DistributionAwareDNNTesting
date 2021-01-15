@@ -136,7 +136,7 @@ def Vae_MNIST_NN1(input_tensor=None, train=False):
         vae.save_weights('./vae_mnist_nn1.h5')
     else:
         vae.load_weights('./vae_mnist_nn1.h5')
-        print('VAE loaded')
+
     return vae
 
 if __name__ == '__main__':
