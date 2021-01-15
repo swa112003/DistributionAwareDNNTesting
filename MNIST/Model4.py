@@ -81,8 +81,7 @@ def Model4(input_tensor=None, train=False):
         # print("--- %s seconds ---" % (time.clock() - start_time))
     else:
         model.load_weights('./Model4.h5')
-        
-        print('MNIST Model4 loaded')
+
     return model
 
 
