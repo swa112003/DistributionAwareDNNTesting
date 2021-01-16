@@ -24,7 +24,7 @@ Follow below steps for installing the packages:
 - `SVHN` Directory contains scripts for SVHN dataset
 - `SVHN/dataset` Placeholder for SVHN dataset files
 
-##### Note: 
+#### Note: 
 - The trained model for SVHN/ModelE is not included due to file size limitations. It can be trained using the provided `ModelE.py` file.
 - For SVHN tests, copy `.mat` files from below location to `SVHN/dataset` directory.
 	http://ufldl.stanford.edu/housenumbers
@@ -34,7 +34,7 @@ The tool can be run using the provided shell scripts or by invoking `dist_gen_di
 
 ### Verify Tool Setup
 `run_MNIST.sh` can be used to run tests for a small set of seeds to verify that the tool is setup properly. Each test will the run the tool for VAE+baseline and baseline and should take less than 30 mins to run. The execution time will vary depending on the platform used.
-##### Procedure
+#### Procedure
 For running MNIST tests:
 
 N in below command is between 1 and 4 and designates MNIST model **MNI-N** from the paper.
@@ -49,7 +49,7 @@ N in below command is between 1 and 4 and designates SVHN model **SVH-N** from t
 cd SVHN
 ./run_SVHN.sh N
 ```
-##### Output
+#### Output
 The script will print out the number of tests generated, neuron coverage and average time and the overall time taken for generating the tests to stdout. It will save the generated tests in `generated_inputs_Model#` and `baseline_generated_inputs_Model#` directories. When the number of tests generated is zero, it will print out NA for average test generation time. The test generation time will vary depending on the execution platform.
 
 Below is a sample output for MNI-1 model:
@@ -80,7 +80,7 @@ To run all SVHN tests used in the paper (SVH-1, SVH-2, SVH-3 and SVH-4):
 cd SVHN
 ./run_SVHN_all.sh
 ```
-##### Output
+#### Output
 The script will save the output for all the models in `output.txt` file. It will contain output similar to the one mentioned above for each of the models.
 
 ### Run The Tool With Custom Parameters
