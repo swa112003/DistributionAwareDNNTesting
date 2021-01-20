@@ -265,7 +265,10 @@ for current_seed in seed_nums:
                         predictions1) + '_' + str(predictions2) + '_' + str(predictions3)+'_orig.png',
                     orig_img_deprocessed)
             break
-            
+
+duration = (datetime.datetime.now() - start_time).total_seconds()
+no_tests = len(result_loop_index)
+              
 if args.weight_vae == 0:
     print("*****Result of baseline test*****")
 else:
