@@ -257,11 +257,11 @@ for current_seed in seed_nums:
             
             # save the result to disk
             imageio.imwrite(
-                    output_directory + str(loop_index) + '_'+str(current_seed) + '_' + str(iters) + '_' + str(
+                    output_directory + str(loop_index) + '_' + str(
                         predictions1) + '_' + str(predictions2) + '_' + str(predictions3)+'.png',
                     gen_img_deprocessed)
             imageio.imwrite(
-                    orig_directory + str(loop_index) + '_' + str(current_seed) + '_' + str(iters) + '_' + str(
+                    orig_directory + str(loop_index) + '_' + str(
                         predictions1) + '_' + str(predictions2) + '_' + str(predictions3)+'_orig.png',
                     orig_img_deprocessed)
             break
